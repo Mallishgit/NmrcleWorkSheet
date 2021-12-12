@@ -1,0 +1,23 @@
+<html>
+<head>
+<body>
+	<script src="math.js"> </script>
+	<script src="nmrcleMethod.js"> </script>
+	<script src="createNmrcleTbl.js"> </script>
+	<h2>Now we have learnt equation and roots,let us use them in Numerical Method</h2>
+	<l>Select your Method:</l><select id="mtdId" onChange="createQs()">
+		<option value="default" selected>Choose here</option>
+		<option value="elrMtd">Euler Method</option>
+		<option value="rungeMtd4th">Runge Kutta 4th Method</option>
+		<option value="rungeMtd2nd">Runge Kutta 2nd Method</option>
+		<option value="simpson1/3">Simpson 1/3 role</option>
+	</select><br><br>
+<div id="qsDiv" style="background-color:lightblue;height:200;width:500;overflow:scroll" border="2">
+</div>
+	<h1 id="h1Id"></h1>
+	<canvas style="
+	backgroundColor:blue" id="canId" width="500" height="500"></canvas><br><br><br>
+</body>
+</head>
+</html>
+
